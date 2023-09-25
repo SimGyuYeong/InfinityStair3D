@@ -42,7 +42,7 @@ void AStairManager::SpawnStair(int count)
 
 			// Sphere 생성
 			FActorSpawnParameters SpawnParams;
-			GetWorld()->SpawnActor<AStair>(StairClass, spawnLocation, FRotator::ZeroRotator, SpawnParams);
+			GetWorld()->SpawnActor<AStair>(StairClass, stairPos, FRotator::ZeroRotator, SpawnParams);
 		}
 	}
 }
