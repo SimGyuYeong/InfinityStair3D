@@ -3,6 +3,7 @@
 
 #include "StairManager.h"
 #include "Stair.h"
+#include <random>
 
 // Sets default values
 AStairManager::AStairManager()
@@ -41,7 +42,7 @@ void AStairManager::SpawnStair(int count)
 
 			// Sphere 생성
 			FActorSpawnParameters SpawnParams;
-			GetWorld()->SpawnActor<AStair>(StairClass, SpawnLocation, FRotator::ZeroRotator, SpawnParams);
+			GetWorld()->SpawnActor<AStair>(StairClass, spawnLocation, FRotator::ZeroRotator, SpawnParams);
 		}
 	}
 }
